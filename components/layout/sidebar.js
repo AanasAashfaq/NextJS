@@ -80,7 +80,9 @@ function SideBar()
                     <div className=" items-center block  w-auto max-h-screen overflow-auto grow basis-full">
                         <ul className="mb-[10px] flex flex-col w-[100%] pl-0 ">
                             {menuItems.map(menuItems => <li key={menuItems.id}>
-                                <label onClick={()=>handleNav(menuItems)}
+                                <label onClick={()=>handleNav(menuItems)} onTouchStart={
+                                    (e) => {e.preventDefault();
+    handleNav(menuItems);}}
                                     className={` w-[80%] p-4 cursor-pointer py-2.7 text-sm ease-nav-brand rounded-md my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors ${pathname.includes(menuItems.id) ? 'bg-white drop-shadow-lg' :''}`} >
                                     <div className={`shadow-soft-2xl mr-2 flex h-8 w-8 items-center shadow-md justify-center rounded-lg   
                                     stroke-0 text-center xl:p-2.5 ${pathname.includes(menuItems.id) ? 'bg-gradient-to-tl from-purple-700 to-pink-500': '' }`}>
