@@ -1,0 +1,77 @@
+.form {
+  margin: 2rem auto;
+  width: 100%;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.control {
+  margin-bottom: 0.5rem;
+  flex: 1;
+  min-width: 10rem;
+}
+
+.control label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: black;
+  text-align: left;
+}
+
+
+
+.control input,
+.control textarea {
+  font: inherit;
+  padding: 0.25rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  background-color: rgb(241, 210, 255);
+}
+
+
+.checkboxradio {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgb(195, 75, 250); /* Border color */
+  border-radius: 4px; /* Rounded corners */
+  outline: none;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.checkboxradio:checked {
+  background-color: rgb(195, 75, 250); /* Background color when checked */
+}
+
+/* Style the "dot" inside the checkbox */
+.checkboxradio::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #fff; /* Color of the "dot" */
+  border-radius: 50%; /* Make it a circle */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.checkboxradio:checked::after {
+  display: block;
+}
+

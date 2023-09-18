@@ -1,0 +1,16 @@
+/* styles.module.css */
+.container {
+    /* border: 2px solid green;
+    border-style: solid; */
+    width: 75%;
+    margin-left: 320px; /* Default margin for larger screens */
+    
+  }
+  
+  @media (max-width: 1025px) {
+    .container {
+      width: 130vw;
+      margin-left: auto; /* Set margin to 0 for smaller screens */
+    }
+  }
+  
