@@ -58,17 +58,20 @@ function SideBar()
     }
     const pathname = usePathname()
     return(
-        <div className=' '>
+        
               <Disclosure as="nav">
-        <Disclosure.Button className="absolute top-4 right-4 inline-flex items-center peer justify-center rounded-md p-2 text-gray-800 hover:bg-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white group">
+        <Disclosure.Button className="absolute top-4 right-4 inline-flex items-center peer justify-center
+         rounded-md p-2 text-gray-800
+         hover:bg-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white group">
           <GiHamburgerMenu
-            className="block md:hidden h-6 w-6"
+            className=" block md:hidden h-6 w-6"
             aria-hidden="true"
           />
         </Disclosure.Button>
-        <div className="pt-6  bg-[#fffefe] z-50  h-[100%]  fixed top-0 -left-96  lg:left-0  lg:w-[320px]  peer-focus:left-0 peer:transition ease-out delay-150 duration-200">
+        <div className="pt-6  bg-[#fffefe] z-50  h-[100%]  fixed top-0 -left-96  lg:left-0  lg:w-[320px] 
+         peer-focus:left-0 peer:transition ease-out delay-150 duration-200">
         <aside className="lg:pr-[0px] pr-[30px] lg:left-20 -left-96">
-            <div className="  h-screen pt-9 overflow-y-auto  lg:left-20 -left-96">
+            <div className="  h-screen pt-9   lg:left-20 -left-96">
                 <div className="flex  justify-left ml-10">
                 <img src="https://demos.creative-tim.com/soft-ui-dashboard-tailwind/assets/img/logo-ct.png" className="inline h-full max-w-full transition-all duration-200 ease-nav-brand max-h-8" alt="main_logo" />
                     <span className="ml-1 font-semibold transition-all duration-200 ease-nav-brand">Customer Bank Churn</span>
@@ -95,7 +98,6 @@ function SideBar()
             </aside>
              </div>
             </Disclosure>
-        </div>
     );
 }
 export default SideBar;
