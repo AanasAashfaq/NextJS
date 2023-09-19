@@ -17,7 +17,7 @@ function Layout(props)
                 {props.children}
             </div>
             <div>
-            <div className="mt-12 flex justify-center text-[#293964]">© 2023, made with ♡ by <span className="pb-4 font-semibold pl-1"> Muhammad Umer & Muhammad Anas
+            <div className="mt-12 text-sm flex justify-center text-[#293964]">© 2023, made with ♡ by <span className="pb-4 pr-6 font-semibold pl-1"> Muhammad Umer & Muhammad Anas
                 </span> 
                 </div>
             </div>
