@@ -13,7 +13,7 @@ function Layout(props)
             <div className={classes.container}>
             <HeaderTop />
             <ShowCase />
-            <div className=" ">
+            <div className="">
                 {props.children}
             </div>
             <div>
