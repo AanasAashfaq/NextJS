@@ -3,11 +3,11 @@ function HeaderTop()
 {
     return (<div className={classes.container}>
          <nav>
-                    <ol class="flex  flex-wrap pt-1 mr-12 bg-transparent rounded-lg sm:mr-16">
-                        <li class="ml-[10px] mt-[12px] text-sm leading-normal">
-                            <a class="opacity-50 text-slate-700" href="javascript:;">Pages</a>
+                    <ol className="flex flex-col w-[150px] flex-wrap pt-1 mr-12 bg-transparent rounded-lg sm:mr-16">
+                        <li className="ml-[10px] mt-[12px] text-sm  leading-normal">
+                            <a className="opacity-50 text-slate-700" href="javascript:;">Pages / Tables</a>
                         </li>
-                        <li class="ml-[10px] mt-[12px] text-sm pl-2 capitalize leading-normal text-slate-700 before:float-left before:pr-2 before:text-gray-600 before:content-['/']" aria-current="page">Tables</li>
+                        {/* <li class="ml-[10px] mt-[12px] text-sm pl-2 capitalize leading-normal text-slate-700 before:float-left before:pr-2 before:text-gray-600 before:content-['/']" aria-current="page">Tables</li> */}
                     </ol>
                 </nav>
 
@@ -25,7 +25,7 @@ function HeaderTop()
                     <ul className="mr-32 flex flex-row justify-end pl-0 mb-0 list-none md-max:w-full">
                     <li className="flex items-center">          
                                <i className="fa fa-user sm:mr-1" aria-hidden="true"></i>
-                                <span className="hidden font-medium text-gray-400 sm:inline">sign In</span>
+                                {/* <span className="hidden font-medium text-gray-400 sm:inline">sign In</span> */}
                         </li>
                         {/* <li className="flex items-center px-4">
                           <p>icon</p>

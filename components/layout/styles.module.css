@@ -10,7 +10,7 @@
   @media (max-width: 1025px) {
     .container {
       width: 130vw;
-      padding-left: 30px;
+      padding-left: 0px;
       margin-left: 40px; /* Set margin to 0 for smaller screens */
     }
   }

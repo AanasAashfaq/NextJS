@@ -24,7 +24,17 @@ function Dashboard() {
     }, []);
     if(isLoading)
     {
-        return <h1 className='z-50 text-5xl ml-10'>Loading...</h1>
+        return <div className="border-black/12.5 shadow-soft-xl relative z-20 flex min-w-0 flex-col 
+        break-words rounded-2xl border-2 shadow-lg border-solid bg-white bg-clip-border mb-4">
+<div className=" flex-auto p-4">
+    <div className=" w-[100%]  flex justify-center h-[600px] py-4 pr-1 mb-4 ">
+        <div className="w-[100%] min-h-[100%] ">
+            {/* <iframe src="graph.html" style="margin: auto; width: 100%; height: 100%;"></iframe> */}
+           <h1 className='text-5xl'>Loading</h1>
+            </div>
+        </div>
+    </div>
+</div>
     }
     return (
         <div className="m-2 ">

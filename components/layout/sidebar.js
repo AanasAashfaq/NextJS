@@ -31,20 +31,20 @@ const menuItems = [
 
 
     {
-        id: 'survery',
+        id: 'survey',
         path: '/survey',
         label: 'Custom Prediction',
         icon: 'icon4.png'
     },
     {
-        id: 'keggle',
-        path: '/keggle',
-        label: 'Keggle',
+        id: 'kaggle',
+        path: '/kaggle',
+        label: 'Kaggle',
         icon: 'letter-k.png'
     }, {
         id: 'github',
         path: '/github',
-        label: 'github',
+        label: 'Github',
         icon: 'github.png'
     },
 ]
@@ -83,7 +83,7 @@ function SideBar() {
                                                 e.preventDefault();
                                                 handleNav(menuItems);
                                             }}
-                                            className={` w-[80%] p-4 cursor-pointer py-2.7 text-sm ease-nav-brand rounded-md my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors ${pathname.includes(menuItems.id) ? 'bg-none lg:bg-white drop-shadow-lg' : ''}`} >
+                                            className={` w-fit lg:w-[80%] p-4 cursor-pointer py-2.7 text-sm ease-nav-brand rounded-md my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors ${pathname.includes(menuItems.id) ? 'bg-none lg:bg-white drop-shadow-lg' : ''}`} >
                                             <div className={`shadow-soft-2xl mr-2 flex h-8 w-8 items-center shadow-md justify-center rounded-lg   
                                     stroke-0 text-center xl:p-2.5 ${pathname.includes(menuItems.id) ? 'bg-gradient-to-tl from-purple-700 to-pink-500' : ''}`}>
                                                 <div className='  md:p-[0.5px] p-[10px]'>
