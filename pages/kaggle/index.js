@@ -2,7 +2,15 @@ import Link from 'next/link';
 import { useEffect } from 'react';
 import Head from 'next/head';
 function RedirectTokaggle() {
- 
+  useEffect(() => {
+    const openGitHubInNewTab = () => {
+      setTimeout(()=>{
+        window.open('https://www.kaggle.com/datasets/barelydedicated/bank-customer-churn-modeling', '_blank');
+      })
+    };
+
+    openGitHubInNewTab();
+  }, []);
 
   return (
     <div className="border-black/12.5 shadow-soft-xl relative z-20 flex min-w-0 flex-col 

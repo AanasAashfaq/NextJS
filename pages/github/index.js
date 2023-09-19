@@ -2,7 +2,15 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 function RedirectToGitHub() {
-   
+  useEffect(() => {
+    const openGitHubInNewTab = () => {
+      setTimeout(()=>{
+        window.open('https://github.com/Muhammad1umer-tech/Python-project', '_blank');
+      })
+    };
+
+    openGitHubInNewTab();
+  }, []);
 
   return (
      <div className="border-black/12.5 shadow-soft-xl relative z-20 flex min-w-0 flex-col 
@@ -12,7 +20,7 @@ function RedirectToGitHub() {
     <div className="w-[100%] min-h-[100%] ">
         {/* <iframe src="graph.html" style="margin: auto; width: 100%; height: 100%;"></iframe> */}
         <Head><title>My Github</title></Head>
-        <a href='https://github.com/Muhammad1umer-tech/Python-project' className='text-blue-500 m-auto text-3xl underline underline-offset-1'>Github</a>
+      <Link  href='https://github.com/Muhammad1umer-tech/Python-project' legacyBehavior><a className='text-blue-500 text-3xl underline underline-offset-1'>Github</a></Link>
         </div>
     </div>
 </div>

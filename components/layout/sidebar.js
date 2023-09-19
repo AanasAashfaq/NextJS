@@ -74,7 +74,7 @@ function SideBar() {
                             <img src="https://demos.creative-tim.com/soft-ui-dashboard-tailwind/assets/img/logo-ct.png" className="inline h-full max-w-full transition-all duration-200 ease-nav-brand max-h-8" alt="main_logo" />
                             <span className="ml-1 hidden lg:contents font-semibold transition-all duration-200 ease-nav-brand">Customer Bank Churn</span>
                         </div>
-                        <nav className=" mt-10 w-72 h-[50%] m-2  absolute lg:left-0 left-44  ">
+                        <nav className=" mt-10 lg:w-72 h-[50%] m-2  absolute lg:left-0 left-44  ">
                             <div className=" items-center block  w-auto max-h-screen overflow-auto grow basis-full">
                                 <ul className="mb-[10px] flex flex-col w-[100%] pl-0 ">
                                     {menuItems.map(menuItems => <li key={menuItems.id}>
@@ -83,7 +83,7 @@ function SideBar() {
                                                 e.preventDefault();
                                                 handleNav(menuItems);
                                             }}
-                                            className={` w-fit lg:w-[80%] p-4 cursor-pointer py-2.7 text-sm ease-nav-brand rounded-md my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors ${pathname.includes(menuItems.id) ? 'bg-none lg:bg-white drop-shadow-lg' : ''}`} >
+                                            className={` w-fit lg:w-[80%] p-4 cursor-pointer py-2.7 text-sm ease-nav-brand rounded-md my-0 ml-4 flex items-center whitespace-nowrap px-4 transition-colors ${pathname.includes(menuItems.id) ? 'bg-none lg:bg-white drop-shadow-lg' : ''}`} >
                                             <div className={`shadow-soft-2xl mr-2 flex h-8 w-8 items-center shadow-md justify-center rounded-lg   
                                     stroke-0 text-center xl:p-2.5 ${pathname.includes(menuItems.id) ? 'bg-gradient-to-tl from-purple-700 to-pink-500' : ''}`}>
                                                 <div className='  md:p-[0.5px] p-[10px]'>
